@@ -29,19 +29,19 @@ pip install pillow numpy
 
 To use the CAPTCHA generation module, follow these steps:
 
-1. Import the necessary functions from the `captcha_generator.py` file.
-2. Call the `generate_3d_captcha` function to create a CAPTCHA image.
+1. Import the necessary functions from the `kcaptcha.py` file.
+2. Call the `generate_captcha` function to create a CAPTCHA image.
 
 ### Example
 
 Here’s a simple example of how to generate and display a CAPTCHA:
 
 ```python
-from captcha_generator import generate_3d_captcha
+from kcaptcha import generate_captcha
 import matplotlib.pyplot as plt
 
 # Generate a CAPTCHA image
-captcha_image = generate_3d_captcha(use_russian=False)  # Set to True for Russian text
+captcha_image = generate_captcha(use_russian=False)  # Set to True for Russian text
 
 # Display the generated CAPTCHA image
 plt.imshow(captcha_image)

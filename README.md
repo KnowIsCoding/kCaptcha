@@ -47,6 +47,7 @@ captcha_image = generate_3d_captcha(use_russian=False)  # Set to True for Russia
 plt.imshow(captcha_image)
 plt.axis('off')  # Hide axes
 plt.show()
+```
 
 ## License
 

@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-from captcha_generator import generate_3d_captcha
+from kCaptcha import generate_captcha
 import io
 import asyncio
 

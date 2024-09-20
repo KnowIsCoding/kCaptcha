@@ -37,14 +37,18 @@ To use the CAPTCHA generation module, follow these steps:
 Here’s a simple example of how to generate and display a CAPTCHA:
 
 ```python
-from kcaptcha import generate_captcha
+from kCaptcha import generate_captcha
 import matplotlib.pyplot as plt
+import numpy as np
 
 # Generate a CAPTCHA image
-captcha_image = generate_captcha(use_russian=False)  # Set to True for Russian text
+captcha_image, _ = generate_captcha(use_russian=False)  # Set to True for Russian text
+
+# Convert the image to a NumPy array
+captcha_array = np.array(captcha_image)
 
 # Display the generated CAPTCHA image
-plt.imshow(captcha_image)
+plt.imshow(captcha_array)
 plt.axis('off')  # Hide axes
 plt.show()
 ```
